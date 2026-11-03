@@ -1,0 +1,15 @@
+{
+  "tag_name": "v1.5.1",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.1",
+  "published_at": "2026-11-02T15:03:21Z",
+  "body": "**What changed**\n- **Open folder in the mod details:** click a mod's name, and every folder in its file list has an **Open folder** link. It opens that folder in the game, where the mod's files are, such as `ue4ss\\Mods\\<mod>` or `~mods`. When the mod is turned off and its folder is gone, the link opens the nearest folder above it. (The folder button on the Mods tab still opens the manager's own copy of the mod.)\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.1.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "assets": [
+    {
+      "name": "uemm_phantom-blade-zero_1.5.1.zip",
+      "size": 2324076,
+      "digest": "sha256:81300dd7b8c0d6582d9e2c1e7805bbada17604e9f736e30f36d80121ee6a986c",
+      "browser_download_url": "uemm_phantom-blade-zero_1.5.1.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.1/uemm_phantom-blade-zero_1.5.1.zip"
+    }
+  ]
+}
