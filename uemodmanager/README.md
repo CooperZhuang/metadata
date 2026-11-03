@@ -14,9 +14,11 @@ The UE4SS release each game should use, keyed by the game profile id
 | `version` | Release version, such as `v3.0.1-1181-g83330635`. Users whose installed UE4SS has another version are offered an update. |
 | `url` | Direct `https://` download link of the release zip (`dwmapi.dll` + `ue4ss/` at the top). |
 | `sha256` | SHA-256 of that zip, as in the release's `SHA256SUMS.txt`. A download that differs is refused. |
+| `mirror` | Optional: a copy of the same zip in `ue4ss/`, relative to the manifest, so it comes from the same host. Apps since 1.5.2 download it first and `url` when it fails; older apps ignore it, so `url` stays the GitHub link. |
 
 To ship a new UE4SS build: publish the release, then update `version`, `url`
-and `sha256` of the game and commit. Users get it at their next start, a
+and `sha256` of the game, copy the zip into `ue4ss/` and set `mirror` (only the
+current zip of each game is kept there), and commit. Users get it at their next start, a
 minute after the push (GitHub itself may serve the old file for up to about 5
 minutes).
 
