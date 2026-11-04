@@ -38,6 +38,7 @@ Optional: the one mod the app recommends for a game, at the top of its Mods page
 | `text` | What it does, by language code (`en`, `zh-CN`, `zh-TW`, `vi`); English when a language has none. |
 | `filePrefix` | Optional: the start of the zip's name, when a release holds several zips. |
 | `experimental` | Optional: `true` makes the card's label "Recommended - Experimental". |
+| `notes` | Optional: technical notes by language code, paragraphs apart by an empty line (`\n\n`). A box on the card opens them, with a link to `repo` as the source code. |
 
 Remove the entry when the mod is no longer needed: the card goes away with the
 next start, and an installed copy becomes a normal mod.
