@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.5.4",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.4",
-  "published_at": "2026-11-04T17:25:42Z",
-  "body": "**What changed**\n- **Update hint:** when the recommended mod has a new version, the Mods entry in the sidebar shows a small blue **UPDATE**, on every page. It goes away after the update.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.4.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.5.5",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.5",
+  "published_at": "2026-11-04T18:32:49Z",
+  "body": "**What changed**\n- **Script mods:** the manager now installs files below `ProjectPBZ/Content/JavaScript`, as script mods such as Mods Menu need. Before, those scripts stayed out of the install, so such a mod was incomplete.\n- **Refresh:** the Mods page has a **Refresh** button next to the search box. It checks the mods folder again without a restart, as F5 does.\n- **Note before install:** a new mod of type Game files or Exe files shows a short note first, because it goes into the game's folders and may conflict with other tools or loaders. It is only a note, not an error.\n- **Blue rows:** mods of those two types have a blue row in the list.\n- **Window size:** the window no longer goes below its start size, 1360 × 800. A screen too small for that gets a window that fits.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.5.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.5.4.zip",
-      "size": 2349106,
-      "digest": "sha256:dd7ab6f91620f115984df8892ec85e216607cb6dd4c06984a49b909fe27568bc",
-      "browser_download_url": "uemm_phantom-blade-zero_1.5.4.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.4/uemm_phantom-blade-zero_1.5.4.zip"
+      "name": "uemm_phantom-blade-zero_1.5.5.zip",
+      "size": 2351765,
+      "digest": "sha256:25e62a6fd00731067ed0c5b77e560380abc5e4f3896dc8c4fe4b30dfe798bfc7",
+      "browser_download_url": "uemm_phantom-blade-zero_1.5.5.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.5/uemm_phantom-blade-zero_1.5.5.zip"
     }
   ]
 }
