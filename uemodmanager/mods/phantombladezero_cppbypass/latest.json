@@ -1,0 +1,15 @@
+{
+  "tag_name": "v1.0",
+  "html_url": "https://github.com/KintaroModding/phantombladezero_cppbypass/releases/tag/v1.0",
+  "published_at": "2026-11-04T14:49:46Z",
+  "body": "A Phantom Blade Zero update (Steam build 26367565, 2026-11-04) made the game refuse any changed game script, which broke JavaScript pak mods: they broke the main menu. **UE4SS C++ BYPASS** lets those mods load again. It re-allows the game's own 218 listed scripts to carry changed content, and touches nothing else.\n\nTested in game on the supported build: the game starts, the other UE4SS mods keep working, and pak mods load.\n\n**Needs:** UE4SS for Phantom Blade Zero, built for `v3.0.1-1195-g1ceefac8`.\n\n**Install**\n\n1. Download `phantombladezero_cppbypass_1.0_experimental.zip`.\n2. Copy its `ue4ss` folder into the game's `platform\\steam\\` folder, next to `PBZ.exe`. It adds `ue4ss\\Mods\\phantombladezero_cppbypass\\`.\n3. Put your JavaScript pak mods into `ProjectPBZ\\Content\\Paks\\~mods\\`.\n4. Start the game. A full game restart is needed after you add, remove or replace this mod.\n\n**Experimental and pinned.** It is tied to this exact game build and UE4SS build. After a game patch or a UE4SS update it needs a rebuild with new offsets, and it stays off (safe) on any other version until then. Do not run it together with other script loaders such as PBZModLoader.\n\n**Build it yourself:** `python tools/build.py` with the portable MSVC toolchain (see `README.md`). The source is this repository.\n\nLicense: GNU General Public License v3 (see `LICENSE` and `NOTICE.md`).\n",
+  "assets": [
+    {
+      "name": "phantombladezero_cppbypass_1.0_experimental.zip",
+      "size": 49703,
+      "digest": "sha256:dd3404202b74e1629cc598f3ced1c7c3faa4c057765f4394ea99f460633117c6",
+      "browser_download_url": "phantombladezero_cppbypass_1.0_experimental.zip",
+      "github_download_url": "https://github.com/KintaroModding/phantombladezero_cppbypass/releases/download/v1.0/phantombladezero_cppbypass_1.0_experimental.zip"
+    }
+  ]
+}
