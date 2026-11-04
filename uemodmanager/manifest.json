@@ -30,11 +30,12 @@
       "repo": "KintaroModding/phantombladezero_cppbypass",
       "name": "UE4SS C++ BYPASS",
       "folder": "phantombladezero_cppbypass",
+      "experimental": true,
       "text": {
-        "en": "Brings script-based pak mods back to the game after its new script check. Experimental: made for the current game version and UE4SS 1195.",
-        "zh-CN": "让脚本类 pak 模组在游戏新增脚本校验后重新可用。实验性：适用于当前游戏版本和 UE4SS 1195。",
-        "zh-TW": "讓腳本類 pak 模組在遊戲新增腳本檢查後重新可用。實驗性：適用於目前的遊戲版本和 UE4SS 1195。",
-        "vi": "Giúp các mod pak dạng script hoạt động trở lại sau đợt kiểm tra script mới của game. Thử nghiệm: dành cho phiên bản game hiện tại và UE4SS 1195."
+        "en": "Brings script-based pak mods back after the game's new script check.",
+        "zh-CN": "让脚本类 pak 模组在游戏新增脚本校验后重新可用。",
+        "zh-TW": "讓腳本類 pak 模組在遊戲新增腳本檢查後重新可用。",
+        "vi": "Giúp các mod pak dạng script hoạt động trở lại sau đợt kiểm tra script mới của game."
       }
     }
   }

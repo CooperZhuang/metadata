@@ -37,6 +37,7 @@ Optional: the one mod the app recommends for a game, at the top of its Mods page
 | `folder` | Its folder in UE4SS's `Mods`, so a copy installed by hand is recognized. |
 | `text` | What it does, by language code (`en`, `zh-CN`, `zh-TW`, `vi`); English when a language has none. |
 | `filePrefix` | Optional: the start of the zip's name, when a release holds several zips. |
+| `experimental` | Optional: `true` makes the card's label "Recommended - Experimental". |
 
 Remove the entry when the mod is no longer needed: the card goes away with the
 next start, and an installed copy becomes a normal mod.
