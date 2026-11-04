@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.5.2",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.2",
-  "published_at": "2026-11-03T13:54:40Z",
-  "body": "**What changed**\n- **Downloads from Cloudflare first:** the app's data (the current UE4SS version per game), its own updates and the UE4SS downloads now come from Cloudflare's network first, with GitHub as the backup. This helps where GitHub is slow or blocked. Every download is still checked against its SHA-256 before it is used.\n- **Remote box in the sidebar:** a small box under the version shows where the data came from at this start: **REMOTE CLOUDFLARE**, **REMOTE GITHUB** or **REMOTE OFFLINE**. A click explains what the data is: plain text (JSON), no program code, and nothing is installed until you click.\n- **Try again:** when no data came at start, as when the app starts before the connection is up, the box's window has a **Try again** button. No restart needed.\n- **Help reports** now name where the data and the update check came from.\n- **Traditional Chinese:** the \"Open exe folder\" button now names the right folder, thanks to CooperZhuang.\n\nVersions up to 1.5.1 keep using GitHub; from this version on, the next updates come through Cloudflare.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.2.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.5.3",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.3",
+  "published_at": "2026-11-04T15:41:17Z",
+  "body": "**What changed**\n- **Recommended mod:** the Mods page now has a card at the very top for one recommended mod, apart from your own mods. The app looks for a new version of it at every start.\n- **One click:** the button on the card installs the mod. When the mod needs it, the same click installs or updates UE4SS first. Once installed, it is a normal mod: you can turn it off or uninstall it.\n- **UE4SS C++ BYPASS** is the first recommended mod. The game's update of 2026-11-04 made the game refuse changed scripts, which broke script-based pak mods. This mod brings them back. It is experimental for now and needs further testing, and it is tied to one exact game build and UE4SS build.\n- **Technical notes:** the blue box on the card explains how the mod works and where its source code is.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.3.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.5.2.zip",
-      "size": 2334882,
-      "digest": "sha256:ada325b62270d481a06f10af7d9222379e986b8ede4cf2350e88231802f05082",
-      "browser_download_url": "uemm_phantom-blade-zero_1.5.2.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.2/uemm_phantom-blade-zero_1.5.2.zip"
+      "name": "uemm_phantom-blade-zero_1.5.3.zip",
+      "size": 2348810,
+      "digest": "sha256:2b801655d68f34d2e1efd8c4b68baf0dce8b7f2253bc9857cb88350d1cce7dc6",
+      "browser_download_url": "uemm_phantom-blade-zero_1.5.3.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.3/uemm_phantom-blade-zero_1.5.3.zip"
     }
   ]
 }
