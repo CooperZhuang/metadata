@@ -32,7 +32,7 @@ Optional: the one mod the app recommends for a game, at the top of its Mods page
 
 | Field | Meaning |
 | --- | --- |
-| `repo` | The mod's GitHub repo, as `owner/name`. Its newest release is the version on offer, read at every start. |
+| `repo` | The mod's GitHub repo, as `owner/name`. The app reads it when the copy below cannot be read. |
 | `name` | The name shown before the mod is installed. |
 | `folder` | Its folder in UE4SS's `Mods`, so a copy installed by hand is recognized. |
 | `text` | What it does, by language code (`en`, `zh-CN`, `zh-TW`, `vi`); English when a language has none. |
@@ -43,7 +43,8 @@ Remove the entry when the mod is no longer needed: the card goes away with the
 next start, and an installed copy becomes a normal mod.
 
 `mods/<repo name>/` holds a copy of its newest release (`latest.json` and the zip,
-as in `app/` below), for players who cannot reach GitHub.
+as in `app/` below). The app reads this copy first at every start, so a new release
+of the mod is on offer once its copy is pushed.
 
 ## `app/`
 
