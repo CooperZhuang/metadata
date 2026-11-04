@@ -25,6 +25,25 @@ minutes).
 A game without an entry, or a manifest that cannot be reached, simply offers no
 update; installing UE4SS from a downloaded file always works.
 
+## `recommended`
+
+Optional: the one mod the app recommends for a game, at the top of its Mods page
+(apps since 1.5.3; older ones ignore it). Keyed by the game profile id:
+
+| Field | Meaning |
+| --- | --- |
+| `repo` | The mod's GitHub repo, as `owner/name`. Its newest release is the version on offer, read at every start. |
+| `name` | The name shown before the mod is installed. |
+| `folder` | Its folder in UE4SS's `Mods`, so a copy installed by hand is recognized. |
+| `text` | What it does, by language code (`en`, `zh-CN`, `zh-TW`, `vi`); English when a language has none. |
+| `filePrefix` | Optional: the start of the zip's name, when a release holds several zips. |
+
+Remove the entry when the mod is no longer needed: the card goes away with the
+next start, and an installed copy becomes a normal mod.
+
+`mods/<repo name>/` holds a copy of its newest release (`latest.json` and the zip,
+as in `app/` below), for players who cannot reach GitHub.
+
 ## `app/`
 
 A copy of the newest UE Mod Manager release, for the app's own update check,
