@@ -48,14 +48,14 @@
   "recommended2": {
     "phantom-blade-zero": {
       "repo": "KintaroModding/phantombladezero_pbzmodloader",
-      "name": "PBZModLoader",
+      "name": "PBZModLoader (includes its own FIX for PAK mods)",
       "fileSuffix": "-win64.zip",
       "ue4ss": false,
       "text": {
-        "en": "Runs script mods and lets pak mods change the game's scripts again. It needs no UE4SS.",
-        "zh-CN": "运行脚本模组，并让 pak 模组可以再次修改游戏脚本。无需 UE4SS。",
-        "zh-TW": "執行腳本模組，並讓 pak 模組可以再次修改遊戲腳本。不需要 UE4SS。",
-        "vi": "Chạy mod script và cho phép mod pak thay đổi script của game trở lại. Không cần UE4SS."
+        "en": "Script-based pak mods can be used again in their native state, after the game's new script check. It also runs script mods and needs no UE4SS.",
+        "zh-CN": "在游戏新增脚本校验后，脚本类 pak 模组可以按原样再次使用。它还能运行脚本模组，且无需 UE4SS。",
+        "zh-TW": "在遊戲新增腳本檢查後，腳本類 pak 模組可以按原樣再次使用。它還能執行腳本模組，且不需要 UE4SS。",
+        "vi": "Sau đợt kiểm tra script mới của game, các mod pak dạng script có thể dùng lại ở trạng thái gốc. Nó cũng chạy mod script và không cần UE4SS."
       },
       "notes": {
         "en": "This loader runs JavaScript mods in the game's own script engine, and lets pak mods change the game's scripts again. It is one file, version.dll, next to the game's exe. Its code and scripts are inside that file. It needs no UE4SS, and UE4SS can stay if you want it for other mods.\n\nMods for it go into ProjectPBZ/PBZModLoader/mods, each in its own folder with a main.js. To check that it runs, open ProjectPBZ/PBZModLoader/loader.log after a game start and look for the line that starts with [PBZMOD] ready. On a game build it cannot match, it skips its setup and the game still runs, so a game patch may need a new version of the loader.\n\nTested in the game together with UE4SS, UE4SS C++ BYPASS, script mods and a script pak mod: three starts, no crash, and all mods loaded. This is an unofficial fork of PBZModLoader by LKF, under GPL-3.0.",
@@ -68,10 +68,10 @@
         "name": "UE4SS C++ BYPASS",
         "folder": "phantombladezero_cppbypass",
         "text": {
-          "en": "Brings script-based pak mods back after the game's new script check.",
-          "zh-CN": "让脚本类 pak 模组在游戏新增脚本校验后重新可用。",
-          "zh-TW": "讓腳本類 pak 模組在遊戲新增腳本檢查後重新可用。",
-          "vi": "Giúp các mod pak dạng script hoạt động trở lại sau đợt kiểm tra script mới của game."
+          "en": "Script-based pak mods can be used again in their native state, after the game's new script check. It needs UE4SS.",
+          "zh-CN": "在游戏新增脚本校验后，脚本类 pak 模组可以按原样再次使用。它需要 UE4SS。",
+          "zh-TW": "在遊戲新增腳本檢查後，腳本類 pak 模組可以按原樣再次使用。它需要 UE4SS。",
+          "vi": "Sau đợt kiểm tra script mới của game, các mod pak dạng script có thể dùng lại ở trạng thái gốc. Nó cần UE4SS."
         },
         "notes": {
           "en": "This UE4SS C++ mod still works, and you can use it by choice. Since the update of 2026-11-04, the game refuses any changed game script, which breaks JavaScript pak mods. This mod hooks the game's two script validators in memory. The game's 218 listed project scripts may then carry changed content, and mods may add new project JavaScript or JSON scripts. Engine scripts and anything outside the project scripts still go through the game's normal check.\n\nPBZModLoader now has the same function and needs no UE4SS, so you can decide which one to use. Turning on both at the same time is redundant, but it causes no problems. Other script loaders may conflict.\n\nBefore it starts, the mod checks the game's exe and UE4SS by SHA-256. On any other build it stays off. It is tied to one exact game build and UE4SS 1195, so a game patch or a UE4SS update needs a new version of this mod. Its support for new scripts still needs more testing in game - limited testing on my end worked fine.",
