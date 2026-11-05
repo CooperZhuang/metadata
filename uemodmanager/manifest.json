@@ -92,6 +92,24 @@
           "zh-TW": "解除安裝 C++ BYPASS",
           "vi": "Gỡ cài đặt C++ BYPASS"
         }
+      },
+      "thanks": {
+        "box": {
+          "en": "THANK YOU LKF",
+          "zh-CN": "感谢 LKF",
+          "zh-TW": "感謝 LKF",
+          "vi": "CẢM ƠN LKF"
+        },
+        "text": {
+          "en": "A big thank you to LKF, the original creator of PBZModLoader, for providing an excellent solution.\n\nAnd thank you for being willing to help people by going open source. <3",
+          "zh-CN": "非常感谢 PBZModLoader 的原作者 LKF，提供了如此出色的解决方案。\n\n也感谢 LKF 愿意开源，帮助大家。<3",
+          "zh-TW": "非常感謝 PBZModLoader 的原作者 LKF，提供了如此出色的解決方案。\n\n也感謝 LKF 願意開源，幫助大家。<3",
+          "vi": "Xin cảm ơn rất nhiều LKF, tác giả gốc của PBZModLoader, vì đã tạo ra một giải pháp tuyệt vời.\n\nCũng xin cảm ơn vì đã sẵn lòng giúp mọi người bằng cách công khai mã nguồn. <3"
+        },
+        "links": [
+          "https://www.nexusmods.com/profile/LLKKFF",
+          "https://github.com/zoneoflkf"
+        ]
       }
     }
   }

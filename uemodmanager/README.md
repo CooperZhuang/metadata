@@ -52,6 +52,7 @@ The optional top-level `recommended2` has the same shape and comes first. Apps b
 | `fileSuffix` | The end of the zip's name, such as `-win64.zip`, when a release holds several zips. |
 | `ue4ss` | `false` for a mod that needs no UE4SS: its button leaves UE4SS alone. |
 | `extra` | A second mod, in the same shape, as an extra download below the first. |
+| `thanks` | A green box on the card that opens a thank-you: `box` and `text` by language code (paragraphs apart by an empty line), `links` as https addresses. |
 | `retireText`, `retireButton` | In `extra`: a line and a button that uninstalls it, shown while the main mod is installed too. By language code. |
 
 `mods/<repo name>/` holds a copy of its newest release (`latest.json` and the zip,
