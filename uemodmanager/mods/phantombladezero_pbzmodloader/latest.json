@@ -1,0 +1,15 @@
+{
+  "tag_name": "v2.0.1",
+  "html_url": "https://github.com/KintaroModding/phantombladezero_pbzmodloader/releases/tag/v2.0.1",
+  "published_at": "2026-11-05T17:19:48Z",
+  "body": "**The Chinese version is further down. / 中文版在下方。**\n\n---\n\nA small update: the Alt+F5 message is now in English and Chinese.\n\nThis is an unofficial fork of [PBZModLoader](https://github.com/zoneoflkf/PBZModLoader) by LKF, under GPL-3.0. Please report problems with this fork here, not to the author. Every change is in [FORK.md](https://github.com/KintaroModding/phantombladezero_pbzmodloader/blob/release/FORK.md).\n\n## What is new\n\n- The message on screen after Alt+F5 shows English first, then a dash, then the Chinese text. Before, it was in Chinese only.\n\nNothing else changed: the same files, the same install and the same `mods/` folder. To update from 2.0.0, replace the entry DLL. Keep `mods/` and `mods.ini`. Coming from 1.0.0, see the [2.0.0 notes](https://github.com/KintaroModding/phantombladezero_pbzmodloader/releases/tag/v2.0.0).\n\n## Downloads\n\n- `PBZModLoader-2.0.1-win64.zip`: for players. It holds all five entry DLLs. Install only one: the install guide inside says how.\n- `PBZModLoader-2.0.1-win64.zip.manifest.json`: the file list and hashes, for mod managers.\n- `PBZModLoader-2.0.1-developer.zip`: the TypeScript template and SDK, for mod authors.\n\n## Tested\n\nThe only code change since 2.0.0 is this message and the size of its box. The new DLLs passed the offline tests. The new message had not run in the game when this release was made.\n\n---\n\n小更新：Alt+F5 的屏幕提示现在同时显示英文和中文。\n\n这是 LKF 的 [PBZModLoader](https://github.com/zoneoflkf/PBZModLoader) 的非官方分支，遵循 GPL-3.0。本分支的问题请在此反馈，不要反馈给原作者。所有改动见 [FORK.md](https://github.com/KintaroModding/phantombladezero_pbzmodloader/blob/release/FORK.md)。\n\n## 新内容\n\n- 按 Alt+F5 后的屏幕提示先显示英文，然后是短横线和中文。此前只有中文。\n\n其他内容没有变化：文件、安装方式和 `mods/` 文件夹都相同。从 2.0.0 更新时只需替换入口 DLL，保留 `mods/` 和 `mods.ini`。从 1.0.0 更新请参阅 [2.0.0 说明](https://github.com/KintaroModding/phantombladezero_pbzmodloader/releases/tag/v2.0.0)。\n\n## 下载\n\n- `PBZModLoader-2.0.1-win64.zip`：玩家使用，包含全部五个入口 DLL。只安装其中一个，方法见包内安装说明。\n- `PBZModLoader-2.0.1-win64.zip.manifest.json`：文件清单和哈希，供 MOD 管理器使用。\n- `PBZModLoader-2.0.1-developer.zip`：TypeScript 模板和 SDK，供 MOD 作者使用。\n\n## 测试情况\n\n自 2.0.0 以来，代码只改动了这条提示及其显示框的大小。新的 DLL 已通过离线测试。发布时新提示尚未在游戏中运行过。\n",
+  "assets": [
+    {
+      "name": "PBZModLoader-2.0.1-win64.zip",
+      "size": 3546301,
+      "digest": "sha256:3eb72ef5302d41fd056e671554db93f4a0aa76ede37b38daec48b0beae03b627",
+      "browser_download_url": "PBZModLoader-2.0.1-win64.zip",
+      "github_download_url": "https://github.com/KintaroModding/phantombladezero_pbzmodloader/releases/download/v2.0.1/PBZModLoader-2.0.1-win64.zip"
+    }
+  ]
+}
