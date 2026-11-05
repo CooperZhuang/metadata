@@ -43,6 +43,16 @@ Optional: the one mod the app recommends for a game, at the top of its Mods page
 Remove the entry when the mod is no longer needed: the card goes away with the
 next start, and an installed copy becomes a normal mod.
 
+The optional top-level `recommended2` has the same shape and comes first. Apps before
+1.5.6 do not read it, so `recommended` stays as they know it. Its extra fields:
+
+| Field | Meaning |
+| --- | --- |
+| `fileSuffix` | The end of the zip's name, such as `-win64.zip`, when a release holds several zips. |
+| `ue4ss` | `false` for a mod that needs no UE4SS: its button leaves UE4SS alone. |
+| `extra` | A second mod, in the same shape, as an extra download below the first. |
+| `retireText`, `retireButton` | In `extra`: a line and a button that uninstalls it, shown while the main mod is installed too. By language code. |
+
 `mods/<repo name>/` holds a copy of its newest release (`latest.json` and the zip,
 as in `app/` below). The app reads this copy first at every start, so a new release
 of the mod is on offer once its copy is pushed.

@@ -44,5 +44,55 @@
         "vi": "Từ bản cập nhật 2026-11-04, game từ chối mọi script game đã bị thay đổi, khiến các mod pak JavaScript bị hỏng. Mod UE4SS C++ này hook hai trình kiểm tra script của game trong bộ nhớ. Nhờ đó, 218 script project trong danh sách của game có thể mang nội dung đã thay đổi, và mod có thể thêm script project JavaScript hoặc JSON mới. Script của engine và mọi thứ ngoài script project vẫn qua kiểm tra bình thường của game.\n\nTrước khi khởi động, mod kiểm tra file exe của game và UE4SS bằng SHA-256. Trên mọi bản dựng khác, mod sẽ tắt. Mod gắn với đúng một bản dựng game và UE4SS 1195, nên sau bản vá game hoặc bản cập nhật UE4SS cần có phiên bản mod mới. Không dùng chung với các trình nạp script khác vì chúng rất có thể xung đột (hãy chọn một).\n\nMod này hiện đang thử nghiệm và cần được kiểm tra thêm. Phiên bản 1.0 đã được kiểm tra trong game: game khởi động được, các mod UE4SS khác vẫn hoạt động và mod pak tải được. Phiên bản 1.1 vượt qua các bài kiểm tra hook gốc, nhưng phần hỗ trợ script mới vẫn cần kiểm tra thêm trong game - kiểm tra giới hạn của tôi cho kết quả tốt."
       }
     }
+  },
+  "recommended2": {
+    "phantom-blade-zero": {
+      "repo": "KintaroModding/phantombladezero_pbzmodloader",
+      "name": "PBZModLoader",
+      "fileSuffix": "-win64.zip",
+      "ue4ss": false,
+      "text": {
+        "en": "Runs script mods and lets pak mods change the game's scripts again. It needs no UE4SS.",
+        "zh-CN": "运行脚本模组，并让 pak 模组可以再次修改游戏脚本。无需 UE4SS。",
+        "zh-TW": "執行腳本模組，並讓 pak 模組可以再次修改遊戲腳本。不需要 UE4SS。",
+        "vi": "Chạy mod script và cho phép mod pak thay đổi script của game trở lại. Không cần UE4SS."
+      },
+      "notes": {
+        "en": "This loader runs JavaScript mods in the game's own script engine, and lets pak mods change the game's scripts again. It is one file, version.dll, next to the game's exe. Its code and scripts are inside that file. It needs no UE4SS, and UE4SS can stay if you want it for other mods.\n\nMods for it go into ProjectPBZ/PBZModLoader/mods, each in its own folder with a main.js. To check that it runs, open ProjectPBZ/PBZModLoader/loader.log after a game start and look for the line that starts with [PBZMOD] ready. On a game build it cannot match, it skips its setup and the game still runs, so a game patch may need a new version of the loader.\n\nTested in the game together with UE4SS, UE4SS C++ BYPASS, script mods and a script pak mod: three starts, no crash, and all mods loaded. This is an unofficial fork of PBZModLoader by LKF, under GPL-3.0.",
+        "zh-CN": "此加载器在游戏自身的脚本引擎中运行 JavaScript 模组，并让 pak 模组可以再次修改游戏脚本。它只有一个文件：游戏 exe 旁边的 version.dll，代码和脚本都在其中。它无需 UE4SS；如果其他模组需要，UE4SS 可以保留。\n\n它的模组放在 ProjectPBZ/PBZModLoader/mods 中，每个模组一个文件夹，内含 main.js。要确认它是否运行，请在启动游戏后打开 ProjectPBZ/PBZModLoader/loader.log，查找以 [PBZMOD] ready 开头的行。遇到无法匹配的游戏版本时，它会跳过初始化，游戏仍可运行，因此游戏补丁后可能需要新版加载器。\n\n已在游戏中与 UE4SS、UE4SS C++ BYPASS、脚本模组和一个脚本 pak 模组一起测试：启动三次，没有崩溃，所有模组都已加载。这是 LKF 所作 PBZModLoader 的非官方分支，使用 GPL-3.0 许可。",
+        "zh-TW": "此載入器在遊戲本身的腳本引擎中執行 JavaScript 模組，並讓 pak 模組可以再次修改遊戲腳本。它只有一個檔案：遊戲 exe 旁邊的 version.dll，程式碼和腳本都在其中。它不需要 UE4SS；如果其他模組需要，UE4SS 可以保留。\n\n它的模組放在 ProjectPBZ/PBZModLoader/mods 中，每個模組一個資料夾，內含 main.js。要確認它是否執行，請在啟動遊戲後開啟 ProjectPBZ/PBZModLoader/loader.log，尋找以 [PBZMOD] ready 開頭的行。遇到無法配對的遊戲版本時，它會略過初始化，遊戲仍可執行，因此遊戲修補後可能需要新版載入器。\n\n已在遊戲中與 UE4SS、UE4SS C++ BYPASS、腳本模組和一個腳本 pak 模組一起測試：啟動三次，沒有當機，所有模組都已載入。這是 LKF 所作 PBZModLoader 的非官方分支，採用 GPL-3.0 授權。",
+        "vi": "Trình nạp này chạy mod JavaScript trong bộ máy script của chính game, và cho phép mod pak thay đổi script của game trở lại. Nó chỉ là một tệp, version.dll, nằm cạnh exe của game; mã và script đều nằm trong tệp đó. Nó không cần UE4SS, và UE4SS có thể giữ lại nếu bạn cần cho mod khác.\n\nMod của nó nằm trong ProjectPBZ/PBZModLoader/mods, mỗi mod một thư mục có main.js. Để kiểm tra nó có chạy không, hãy mở ProjectPBZ/PBZModLoader/loader.log sau khi khởi động game và tìm dòng bắt đầu bằng [PBZMOD] ready. Với bản dựng game không khớp, nó bỏ qua bước khởi tạo và game vẫn chạy, nên sau bản vá game có thể cần phiên bản trình nạp mới.\n\nĐã kiểm tra trong game cùng UE4SS, UE4SS C++ BYPASS, mod script và một mod pak script: ba lần khởi động, không lỗi crash, mọi mod đều được tải. Đây là bản fork không chính thức của PBZModLoader do LKF làm, theo giấy phép GPL-3.0."
+      },
+      "extra": {
+        "repo": "KintaroModding/phantombladezero_cppbypass",
+        "name": "UE4SS C++ BYPASS",
+        "folder": "phantombladezero_cppbypass",
+        "experimental": true,
+        "text": {
+          "en": "Brings script-based pak mods back after the game's new script check.",
+          "zh-CN": "让脚本类 pak 模组在游戏新增脚本校验后重新可用。",
+          "zh-TW": "讓腳本類 pak 模組在遊戲新增腳本檢查後重新可用。",
+          "vi": "Giúp các mod pak dạng script hoạt động trở lại sau đợt kiểm tra script mới của game."
+        },
+        "notes": {
+          "en": "Since the update of 2026-11-04, the game refuses any changed game script, which breaks JavaScript pak mods. This UE4SS C++ mod hooks the game's two script validators in memory. The game's 218 listed project scripts may then carry changed content, and mods may add new project JavaScript or JSON scripts. Engine scripts and anything outside the project scripts still go through the game's normal check.\n\nBefore it starts, the mod checks the game's exe and UE4SS by SHA-256. On any other build it stays off. It is tied to one exact game build and UE4SS 1195, so a game patch or a UE4SS update needs a new version of this mod. PBZModLoader 2.0 was tested together with this mod in the game and they ran fine, but this mod is no longer needed with it. Other script loaders may conflict (decide for one).\n\nThis mod is experimental for now and needs further testing. Version 1.0 was tested in the game: the game starts, other UE4SS mods keep working, and pak mods load. Version 1.1 passes the native hook tests, but its support for new scripts still needs more testing in game - limited testing on my end worked fine.",
+          "zh-CN": "自 2026-11-04 更新起，游戏会拒绝任何被修改的游戏脚本，导致 JavaScript pak 模组失效。这个 UE4SS C++ 模组在内存中挂钩游戏的两个脚本校验器，让游戏列表中的 218 个 project 脚本可以使用修改后的内容，模组也可以添加新的 project JavaScript 或 JSON 脚本。引擎脚本以及 project 脚本之外的内容仍按游戏的正常校验处理。\n\n模组启动前会用 SHA-256 检查游戏的 exe 和 UE4SS。在其他版本上，它保持关闭。它只适用于一个特定的游戏版本和 UE4SS 1195，因此游戏补丁或 UE4SS 更新后需要此模组的新版本。PBZModLoader 2.0 已在游戏中与此模组一起测试，运行正常，但使用它后不再需要此模组。其他脚本加载器可能会冲突（请选择其一）。\n\n此模组目前为实验性，仍需进一步测试。1.0 版本已在游戏中测试：游戏可以启动，其他 UE4SS 模组正常工作，pak 模组可以加载。1.1 版本通过了原生挂钩测试，但对新脚本的支持仍需在游戏中进行更多测试——我这边的有限测试运行正常。",
+          "zh-TW": "自 2026-11-04 更新起，遊戲會拒絕任何被修改的遊戲腳本，導致 JavaScript pak 模組失效。這個 UE4SS C++ 模組在記憶體中掛鉤遊戲的兩個腳本驗證器，讓遊戲清單中的 218 個 project 腳本可以使用修改後的內容，模組也可以新增 project JavaScript 或 JSON 腳本。引擎腳本以及 project 腳本以外的內容仍依遊戲的正常檢查處理。\n\n模組啟動前會以 SHA-256 檢查遊戲的 exe 和 UE4SS。在其他版本上，它會保持關閉。它只適用於一個特定的遊戲版本和 UE4SS 1195，因此遊戲修補或 UE4SS 更新後需要此模組的新版本。PBZModLoader 2.0 已在遊戲中與此模組一起測試，運作正常，但使用它後不再需要此模組。其他腳本載入器可能會衝突（請擇一使用）。\n\n此模組目前為實驗性，仍需進一步測試。1.0 版已在遊戲中測試：遊戲可以啟動，其他 UE4SS 模組正常運作，pak 模組可以載入。1.1 版通過了原生掛鉤測試，但對新腳本的支援仍需在遊戲中進行更多測試——我這邊的有限測試運作正常。",
+          "vi": "Từ bản cập nhật 2026-11-04, game từ chối mọi script game đã bị thay đổi, khiến các mod pak JavaScript bị hỏng. Mod UE4SS C++ này hook hai trình kiểm tra script của game trong bộ nhớ. Nhờ đó, 218 script project trong danh sách của game có thể mang nội dung đã thay đổi, và mod có thể thêm script project JavaScript hoặc JSON mới. Script của engine và mọi thứ ngoài script project vẫn qua kiểm tra bình thường của game.\n\nTrước khi khởi động, mod kiểm tra file exe của game và UE4SS bằng SHA-256. Trên mọi bản dựng khác, mod sẽ tắt. Mod gắn với đúng một bản dựng game và UE4SS 1195, nên sau bản vá game hoặc bản cập nhật UE4SS cần có phiên bản mod mới. PBZModLoader 2.0 đã được kiểm tra cùng mod này trong game và chạy tốt, nhưng khi có nó thì mod này không còn cần thiết. Các trình nạp script khác có thể xung đột (hãy chọn một).\n\nMod này hiện đang thử nghiệm và cần được kiểm tra thêm. Phiên bản 1.0 đã được kiểm tra trong game: game khởi động được, các mod UE4SS khác vẫn hoạt động và mod pak tải được. Phiên bản 1.1 vượt qua các bài kiểm tra hook gốc, nhưng phần hỗ trợ script mới vẫn cần kiểm tra thêm trong game - kiểm tra giới hạn của tôi cho kết quả tốt."
+        },
+        "retireText": {
+          "en": "C++ BYPASS is no longer needed with this loader.",
+          "zh-CN": "使用此加载器后，不再需要 C++ BYPASS。",
+          "zh-TW": "使用此載入器後，不再需要 C++ BYPASS。",
+          "vi": "Với trình nạp này, C++ BYPASS không còn cần thiết."
+        },
+        "retireButton": {
+          "en": "Uninstall C++ BYPASS",
+          "zh-CN": "卸载 C++ BYPASS",
+          "zh-TW": "解除安裝 C++ BYPASS",
+          "vi": "Gỡ cài đặt C++ BYPASS"
+        }
+      }
+    }
   }
 }
