@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.5.5",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.5",
-  "published_at": "2026-11-04T18:32:49Z",
-  "body": "**What changed**\n- **Script mods:** the manager now installs files below `ProjectPBZ/Content/JavaScript`, as script mods such as Mods Menu need. Before, those scripts stayed out of the install, so such a mod was incomplete.\n- **Refresh:** the Mods page has a **Refresh** button next to the search box. It checks the mods folder again without a restart, as F5 does.\n- **Note before install:** a new mod of type Game files or Exe files shows a short note first, because it goes into the game's folders and may conflict with other tools or loaders. It is only a note, not an error.\n- **Blue rows:** mods of those two types have a blue row in the list.\n- **Window size:** the window no longer goes below its start size, 1360 × 800. A screen too small for that gets a window that fits.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.5.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.5.6",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.6",
+  "published_at": "2026-11-05T20:02:31Z",
+  "body": "**What changed**\n- **PBZModLoader on the recommended card:** script-based pak mods can be used again in their native state, and it also runs script mods. It is one DLL and needs no UE4SS. Thank you to LKF, its original creator, for an excellent solution and for going open source.\n- **UE4SS C++ BYPASS stays available:** it is on the card as an extra download, so you can decide which one to use. Turning on both at the same time is redundant, but it causes no problems.\n- **Upgrade from a manual install:** if you installed PBZModLoader by hand, the app asks first, moves the old loader files to a backup folder, and installs the one DLL. Your mods and `mods.ini` stay. Mods with only a `main.ts` no longer run, and the question names them.\n- **Mods for PBZModLoader:** mods in `ProjectPBZ/PBZModLoader/mods` now install. A zip with a copy for PBZModLoader and a copy for Mods Menu installs only one copy, and the copy for the loader in your game is ticked.\n- **A script mod waits for its loader:** the review stops it until that loader is installed, and says what to do.\n- **Mods Menu and PBZModLoader:** they cause problems together, so only one of them can be installed at a time. The app warns if both are already in the game.\n- **Safer installs:** a mod that only shares a file with another mod no longer replaces it, and only one entry DLL of the loader is ticked. Scripts named like `install.js` or `notice.js` are no longer left out.\n- **Smaller changes:** the note before installing Game files or Exe files mods is gone. Install problems always stay in view, and long file notes wrap.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.6.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.5.5.zip",
-      "size": 2351765,
-      "digest": "sha256:25e62a6fd00731067ed0c5b77e560380abc5e4f3896dc8c4fe4b30dfe798bfc7",
-      "browser_download_url": "uemm_phantom-blade-zero_1.5.5.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.5/uemm_phantom-blade-zero_1.5.5.zip"
+      "name": "uemm_phantom-blade-zero_1.5.6.zip",
+      "size": 2372758,
+      "digest": "sha256:3910c14fca71dabd841607b83d6f068037434aca9848268501cd048b1a43ef73",
+      "browser_download_url": "uemm_phantom-blade-zero_1.5.6.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.6/uemm_phantom-blade-zero_1.5.6.zip"
     }
   ]
 }
