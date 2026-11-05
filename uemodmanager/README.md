@@ -48,6 +48,7 @@ The optional top-level `recommended2` has the same shape and comes first. Apps b
 
 | Field | Meaning |
 | --- | --- |
+| `installedName` | A shorter name for the mod's row once it is installed. |
 | `fileSuffix` | The end of the zip's name, such as `-win64.zip`, when a release holds several zips. |
 | `ue4ss` | `false` for a mod that needs no UE4SS: its button leaves UE4SS alone. |
 | `extra` | A second mod, in the same shape, as an extra download below the first. |

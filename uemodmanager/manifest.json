@@ -49,6 +49,7 @@
     "phantom-blade-zero": {
       "repo": "KintaroModding/phantombladezero_pbzmodloader",
       "name": "PBZModLoader (includes its own FIX for PAK mods)",
+      "installedName": "PBZModLoader",
       "fileSuffix": "-win64.zip",
       "ue4ss": false,
       "text": {
