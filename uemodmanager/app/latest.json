@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.5.7",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.7",
-  "published_at": "2026-11-06T12:09:34Z",
-  "body": "**What changed**\n- **Tags for your mods:** add them when you install a mod, or with the **Add tag** button, such as \"Combat, UI\". Buttons above the list then show only the mods with a tag, with one click, and the search finds tags too. An update keeps them.\n- **Clear a search:** an X in the search boxes clears the text, and so does Esc.\n- **More mods install whole:** a mod's loose files anywhere below `ProjectPBZ` now install at their path, such as the images of Quest Navigation in `ProjectPBZ/Content/Mods`. Everything that installed before still goes to the same place.\n- **Mods without the project folder:** a zip with `PBZModLoader/mods/...` or `Content/...` on top, without `ProjectPBZ`, now installs.\n- **Fewer files left out:** a `.sig` file goes with its pak, and files such as `license.json` or `notice.ini` are no longer taken for documents.\n- **New warnings before an install:** the install window warns when a file stays out that the mod may need. It also warns about a mod with only a `main.ts`, which PBZModLoader 2.0 cannot use.\n- **A clearer message** when a download has no mod files.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.7.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.5.8",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.5.8",
+  "published_at": "2026-11-07T08:06:53Z",
+  "body": "**What changed**\n- **Same file names as an installed mod:** some mods use the same file names, such as two styles of one outfit, and the second one used to replace the first as an update. The install window now asks: update the installed mod, or keep both.\n- **Keep both:** the new mod goes in a folder of its own in `~mods`, and each mod has its own switch. Both mods may still change the same things in the game. Then only one style or version shows, and the window says so. Only the mod's author can make both work together, with one combined mod.\n- **Donate button:** it is above the Discord button and opens a short thank-you window. A donation is fully optional, and every feature works the same without one. The X on the button removes it for good, and the About page keeps it.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.5.8.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.5.7.zip",
-      "size": 2385465,
-      "digest": "sha256:b5d3cfbf3d7c1c509e4547a4bf709d3a0c2f7d0c1f178904e794684215b4b3b2",
-      "browser_download_url": "uemm_phantom-blade-zero_1.5.7.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.7/uemm_phantom-blade-zero_1.5.7.zip"
+      "name": "uemm_phantom-blade-zero_1.5.8.zip",
+      "size": 2398945,
+      "digest": "sha256:2d90d6705ee521034239e7b4d1bf6eff35fdd67790faf0d8cc68ae428543fd0d",
+      "browser_download_url": "uemm_phantom-blade-zero_1.5.8.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.5.8/uemm_phantom-blade-zero_1.5.8.zip"
     }
   ]
 }
