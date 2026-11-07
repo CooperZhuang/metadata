@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.6.0",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.0",
-  "published_at": "2026-11-07T10:56:08Z",
-  "body": "**What changed**\n- **Mods Menu and PBZModLoader together:** Mods Menu 0.9.0 and PBZModLoader 2.1.0 or newer run side by side, so both now install like any other mod. The app warns when it knows an older version of either, as that one causes problems with the other. PBZModLoader's hid entry stays out beside Mods Menu, as both need `hid.dll`.\n- **See the files the manager did not install:** **Show files** in the box below the mod list lists them in the tree of their folders, with their sizes. They can be meant to be there, and the manager never changes them.\n- **Smaller changes:** that box has a file icon instead of a warning sign, the one-click card installs a mod with several files at once, and the UE4SS window shows its note on which release to take only when you download UE4SS by hand.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.0.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.6.1",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.1",
+  "published_at": "2026-11-07T12:39:30Z",
+  "body": "**What changed**\n- **Open mod page:** a mod whose download kept the mod site's file name has an **Open mod page** link in the mod list, above its icons, and in its details. The app reads the mod's number from the file name, so it needs no network and no account. Mods you installed with an older version get the link too, if you did not rename their download. Other mods show *No mod page*, and the mods on the card show neither.\n- **Repeated downloads:** a second download of the same file, whose name ends in `(1)`, now gets its name and version from the file name too.\n- **Not possible yet:** a real update check, which would tell you when a mod has a newer version. It needs access to the mod site's API, and that request still waits for approval. Until then, Open mod page is the most the app can do.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.1.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.6.0.zip",
-      "size": 2413992,
-      "digest": "sha256:63b5f50ee20a6c35c78509f9ff8dafbbcd8803911178412b0d55396f4ad3d47d",
-      "browser_download_url": "uemm_phantom-blade-zero_1.6.0.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.0/uemm_phantom-blade-zero_1.6.0.zip"
+      "name": "uemm_phantom-blade-zero_1.6.1.zip",
+      "size": 2419358,
+      "digest": "sha256:eb9d281b36bd9cf3ea3d513e1cc32c3266944a1c5fb6c200da3b2cec0e06286d",
+      "browser_download_url": "uemm_phantom-blade-zero_1.6.1.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.1/uemm_phantom-blade-zero_1.6.1.zip"
     }
   ]
 }
