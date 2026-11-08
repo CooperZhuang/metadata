@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.6.1",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.1",
-  "published_at": "2026-11-07T12:39:30Z",
-  "body": "**What changed**\n- **Open mod page:** a mod whose download kept the mod site's file name has an **Open mod page** link in the mod list, above its icons, and in its details. The app reads the mod's number from the file name, so it needs no network and no account. Mods you installed with an older version get the link too, if you did not rename their download. Other mods show *No mod page*, and the mods on the card show neither.\n- **Repeated downloads:** a second download of the same file, whose name ends in `(1)`, now gets its name and version from the file name too.\n- **Not possible yet:** a real update check, which would tell you when a mod has a newer version. It needs access to the mod site's API, and that request still waits for approval. Until then, Open mod page is the most the app can do.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.1.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.6.2",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.2",
+  "published_at": "2026-11-08T22:39:26Z",
+  "body": "**What changed**\n- **Same mod page:** a download from the mod site with the number of an installed mod, but none of its files, now asks. An example is Auto Collect Loot, which moved from a pak to a script. **Keep both** comes first, as a page can hold several files, such as optional ones; **Update** replaces the installed mod. A download with the same files updates as before. Thanks to CooperZhuang (#15).\n- **Settings in ~mods:** a script mod that keeps its settings file in `~mods`, such as PBZ-SpeakerHighlight 0.4.0, now installs it with the mod instead of leaving it out. Thanks to CooperZhuang (#13).\n- **Downloads for several loaders:** a download with a branch for UE4SS and one for PBZModLoader, such as PBZQuestGuide 1.2.4, installs whole, as its author says. With one loader missing, the review now warns that its part does not run yet, instead of stopping. Thanks to CooperZhuang, whose #14 showed the problem.\n- **Less noise:** data files such as `MANIFEST.json` beside the game's folders of a download no longer give a \"Files left out\" warning.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.2.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.6.1.zip",
-      "size": 2419358,
-      "digest": "sha256:eb9d281b36bd9cf3ea3d513e1cc32c3266944a1c5fb6c200da3b2cec0e06286d",
-      "browser_download_url": "uemm_phantom-blade-zero_1.6.1.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.1/uemm_phantom-blade-zero_1.6.1.zip"
+      "name": "uemm_phantom-blade-zero_1.6.2.zip",
+      "size": 2424134,
+      "digest": "sha256:38503ca18561457aec3cff5c77595fcc36845a3fc361c5e1d3e8d6712ba7a8ad",
+      "browser_download_url": "uemm_phantom-blade-zero_1.6.2.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.2/uemm_phantom-blade-zero_1.6.2.zip"
     }
   ]
 }
