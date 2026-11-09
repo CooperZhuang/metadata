@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.6.2",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.2",
-  "published_at": "2026-11-08T22:39:26Z",
-  "body": "**What changed**\n- **Same mod page:** a download from the mod site with the number of an installed mod, but none of its files, now asks. An example is Auto Collect Loot, which moved from a pak to a script. **Keep both** comes first, as a page can hold several files, such as optional ones; **Update** replaces the installed mod. A download with the same files updates as before. Thanks to CooperZhuang (#15).\n- **Settings in ~mods:** a script mod that keeps its settings file in `~mods`, such as PBZ-SpeakerHighlight 0.4.0, now installs it with the mod instead of leaving it out. Thanks to CooperZhuang (#13).\n- **Downloads for several loaders:** a download with a branch for UE4SS and one for PBZModLoader, such as PBZQuestGuide 1.2.4, installs whole, as its author says. With one loader missing, the review now warns that its part does not run yet, instead of stopping. Thanks to CooperZhuang, whose #14 showed the problem.\n- **Less noise:** data files such as `MANIFEST.json` beside the game's folders of a download no longer give a \"Files left out\" warning.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.2.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.6.3",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.3",
+  "published_at": "2026-11-09T14:57:15Z",
+  "body": "**What changed**\n- **Settings that a mod makes:** some script mods write their settings file into `~mods` at their first game start, such as Auto Collect Loot's `PBZAutoCollect.txt`. The manager now takes that file into the mod, at its start and when the game closes. An update keeps your settings, an uninstall backs them up, and **Show files** no longer lists the file. Thanks to CooperZhuang (#17).\n- **Fix:** a settings file in `~mods` that comes with a script mod, such as PBZ-SpeakerHighlight's, was still left out when the download has a folder of its own on top. It now installs with the mod.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.3.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.6.2.zip",
-      "size": 2424134,
-      "digest": "sha256:38503ca18561457aec3cff5c77595fcc36845a3fc361c5e1d3e8d6712ba7a8ad",
-      "browser_download_url": "uemm_phantom-blade-zero_1.6.2.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.2/uemm_phantom-blade-zero_1.6.2.zip"
+      "name": "uemm_phantom-blade-zero_1.6.3.zip",
+      "size": 2426826,
+      "digest": "sha256:2255df6dbe82db649e11d1a2c55adb6a85db0e8724d487617701fb6cd09834a3",
+      "browser_download_url": "uemm_phantom-blade-zero_1.6.3.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.3/uemm_phantom-blade-zero_1.6.3.zip"
     }
   ]
 }
