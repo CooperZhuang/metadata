@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.7.0",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.7.0",
-  "published_at": "2026-11-10T10:31:50Z",
-  "body": "**What changed**\n- **Update check for mods:** for every mod with a mod page, the app now asks the mod site which version is on the page. It sends one request for all of them, at each start and with the new button in the mod list's header, which then waits 30 seconds. It sends only the mod numbers, needs no account and downloads nothing.\n- **Update available / Up to date:** each of these rows, and the mod details, show the result. **Update available** opens the page's files, where you download the newer version. The **UPDATE** mark on the Mods entry shows when a mod has one.\n- **How it works, and its limits:** **UPDATE CHECK NOTES** next to the button explains what is compared with what. The page has one version for the whole mod, so the check is only as good as the author's version numbers.\n- **Settings ▸ Mod updates** turns off the check at start. The button works either way.\n\nThanks to msylgj, whose first try at an update check (#19) led to this one.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.7.0.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.7.1",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.7.1",
+  "published_at": "2026-11-10T10:46:09Z",
+  "body": "**What changed**\n- **An update keeps your mod names:** a name you gave a mod with **Edit**, or typed in the install review, now stays when you install an update by hand, like its tags. A name the app made from the file name still follows the new download, and **Keep both** gives the second mod the download's name. Thanks to qhq (#20).\n\n**Install:** unzip `uemm_phantom-blade-zero_1.7.1.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.7.0.zip",
-      "size": 2445754,
-      "digest": "sha256:b4499c795e4ac8b76a318ebf5cec83c368d291b0a5200f1e8ccbf892f0a0d679",
-      "browser_download_url": "uemm_phantom-blade-zero_1.7.0.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.7.0/uemm_phantom-blade-zero_1.7.0.zip"
+      "name": "uemm_phantom-blade-zero_1.7.1.zip",
+      "size": 2446353,
+      "digest": "sha256:8155f6dbd7b2514989b049acf6ade349ce110ca9623c17d907ad76bf6cc149b2",
+      "browser_download_url": "uemm_phantom-blade-zero_1.7.1.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.7.1/uemm_phantom-blade-zero_1.7.1.zip"
     }
   ]
 }
