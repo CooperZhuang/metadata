@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.6.3",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.3",
-  "published_at": "2026-11-09T14:57:15Z",
-  "body": "**What changed**\n- **Settings that a mod makes:** some script mods write their settings file into `~mods` at their first game start, such as Auto Collect Loot's `PBZAutoCollect.txt`. The manager now takes that file into the mod, at its start and when the game closes. An update keeps your settings, an uninstall backs them up, and **Show files** no longer lists the file. Thanks to CooperZhuang (#17).\n- **Fix:** a settings file in `~mods` that comes with a script mod, such as PBZ-SpeakerHighlight's, was still left out when the download has a folder of its own on top. It now installs with the mod.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.3.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v1.6.4",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v1.6.4",
+  "published_at": "2026-11-10T01:30:04Z",
+  "body": "**What changed**\n- **No false \"the game is running\":** before the app changes files in the game folder, it checks whether the game runs. A program with the game's exe name in another folder, such as one started as administrator, could count as the game, so the app said the game was running while it was not. The app now reads a process's path with a query that also works for programs started as administrator. Thanks to High-cla (#18).\n- **Clearer log:** the app log names the process that counted as the running game, with its path, or why its path could not be read.\n\n**Install:** unzip `uemm_phantom-blade-zero_1.6.4.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Or replace `UEModManager.exe` with the new one. The `Data` folder stays.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_phantom-blade-zero_1.6.3.zip",
-      "size": 2426826,
-      "digest": "sha256:2255df6dbe82db649e11d1a2c55adb6a85db0e8724d487617701fb6cd09834a3",
-      "browser_download_url": "uemm_phantom-blade-zero_1.6.3.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.3/uemm_phantom-blade-zero_1.6.3.zip"
+      "name": "uemm_phantom-blade-zero_1.6.4.zip",
+      "size": 2427652,
+      "digest": "sha256:878c55ad9b4d7c9e0653bfd853682b53a107f4ba4c68a850ffdb95fb66741444",
+      "browser_download_url": "uemm_phantom-blade-zero_1.6.4.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v1.6.4/uemm_phantom-blade-zero_1.6.4.zip"
     }
   ]
 }
