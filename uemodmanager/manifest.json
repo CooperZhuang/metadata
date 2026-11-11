@@ -28,6 +28,7 @@
       "version": "v3.0.1-1195-g1ceefac8",
       "url": "https://github.com/KintaroModding/ue4ss/releases/download/v3.0.1-1195-g1ceefac8/blackmythwukong_ue4ss_v3.0.1-1195-g1ceefac8.zip",
       "sha256": "68DA5D7FECF5ECEA34B645462B319070A38137A6095457077B7955FCC7664017",
+      "mirror": "ue4ss/blackmythwukong_ue4ss_v3.0.1-1195-g1ceefac8.zip",
       "files": {
         "dwmapi.dll": [
           "BEA75C36C6824A36A36E640B4F246B5EAFF108A968E4648ED4500F5EF25D6946"
