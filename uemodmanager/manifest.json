@@ -23,6 +23,19 @@
           "E1FB9A7E1D868AFEF6A091C2012E711C3EC47F05D100BA37F9631A4F75F31DF2"
         ]
       }
+    },
+    "black-myth-wukong": {
+      "version": "v3.0.1-1195-g1ceefac8",
+      "url": "https://github.com/KintaroModding/ue4ss/releases/download/v3.0.1-1195-g1ceefac8/blackmythwukong_ue4ss_v3.0.1-1195-g1ceefac8.zip",
+      "sha256": "68DA5D7FECF5ECEA34B645462B319070A38137A6095457077B7955FCC7664017",
+      "files": {
+        "dwmapi.dll": [
+          "BEA75C36C6824A36A36E640B4F246B5EAFF108A968E4648ED4500F5EF25D6946"
+        ],
+        "ue4ss/UE4SS.dll": [
+          "E1FB9A7E1D868AFEF6A091C2012E711C3EC47F05D100BA37F9631A4F75F31DF2"
+        ]
+      }
     }
   },
   "recommended": {
@@ -109,6 +122,42 @@
         "links": [
           "https://www.nexusmods.com/profile/LLKKFF",
           "https://github.com/zoneoflkf"
+        ]
+      }
+    },
+    "black-myth-wukong": {
+      "repo": "KintaroModding/b1csharploader",
+      "name": "C# Loader",
+      "installedName": "C# Loader",
+      "filePrefix": "B1CSharpLoader-",
+      "ue4ss": false,
+      "text": {
+        "en": "Runs mods written in C#, which many Wukong mods need. It needs no UE4SS.",
+        "zh-CN": "运行用 C# 编写的模组，许多《黑神话：悟空》模组都需要它。它无需 UE4SS。",
+        "zh-TW": "執行以 C# 撰寫的模組，許多《黑神話：悟空》模組都需要它。它不需要 UE4SS。",
+        "vi": "Chạy các mod viết bằng C#, mà nhiều mod Wukong cần. Nó không cần UE4SS."
+      },
+      "notes": {
+        "en": "This loader runs C# mods in the game's own Mono runtime. It is a version.dll next to the game's exe and the folder CSharpLoader beside it. Mods for it go into b1\\Binaries\\Win64\\CSharpLoader\\Mods, each in its own folder. Its settings are in CSharpLoader\\b1cs.ini, and F10 opens its in-game console with the log. It needs no UE4SS, and UE4SS can stay for other mods.\n\nIt switches the game's Mono runtime to JIT mode, which C# hooks need. This can stop some trainers from working. Set EnableJit=0 in b1cs.ini if none of your mods needs hooks.\n\nIf another plugin is also named version.dll, rename it and put it into CSharpLoader\\Plugins: the loader loads it too.\n\nThis is a maintained fork of B1CSharpLoader by czastack, under the MIT license.",
+        "zh-CN": "此加载器在游戏自身的 Mono 运行时中运行 C# 模组。它是游戏 exe 旁边的一个 version.dll，以及旁边的 CSharpLoader 文件夹。它的模组放在 b1\\Binaries\\Win64\\CSharpLoader\\Mods 中，每个模组一个文件夹。设置位于 CSharpLoader\\b1cs.ini，按 F10 可打开游戏内控制台查看日志。它无需 UE4SS；如果其他模组需要，UE4SS 可以保留。\n\n它会将游戏的 Mono 运行时切换为 JIT 模式，这是 C# 挂钩所必需的。这可能导致某些修改器无法使用。如果你的模组都不需要挂钩，请在 b1cs.ini 中设置 EnableJit=0。\n\n如果另一个插件也叫 version.dll，请将其重命名并放入 CSharpLoader\\Plugins：加载器也会加载它。\n\n这是 czastack 所作 B1CSharpLoader 的维护分支，使用 MIT 许可。",
+        "zh-TW": "此載入器在遊戲本身的 Mono 執行環境中執行 C# 模組。它是遊戲 exe 旁邊的一個 version.dll，以及旁邊的 CSharpLoader 資料夾。它的模組放在 b1\\Binaries\\Win64\\CSharpLoader\\Mods 中，每個模組一個資料夾。設定位於 CSharpLoader\\b1cs.ini，按 F10 可開啟遊戲內主控台查看記錄。它不需要 UE4SS；如果其他模組需要，UE4SS 可以保留。\n\n它會將遊戲的 Mono 執行環境切換為 JIT 模式，這是 C# 掛鉤所必需的。這可能導致某些修改器無法使用。如果你的模組都不需要掛鉤，請在 b1cs.ini 中設定 EnableJit=0。\n\n如果另一個外掛也叫 version.dll，請將其重新命名並放入 CSharpLoader\\Plugins：載入器也會載入它。\n\n這是 czastack 所作 B1CSharpLoader 的維護分支，採用 MIT 授權。",
+        "vi": "Trình nạp này chạy mod C# trong môi trường Mono của chính game. Nó là một tệp version.dll nằm cạnh exe của game, kèm thư mục CSharpLoader bên cạnh. Mod của nó nằm trong b1\\Binaries\\Win64\\CSharpLoader\\Mods, mỗi mod một thư mục. Cấu hình nằm trong CSharpLoader\\b1cs.ini, và phím F10 mở bảng điều khiển trong game với nhật ký. Nó không cần UE4SS, và UE4SS có thể giữ lại cho mod khác.\n\nNó chuyển môi trường Mono của game sang chế độ JIT, điều mà hook C# cần. Việc này có thể khiến một số trainer không hoạt động. Hãy đặt EnableJit=0 trong b1cs.ini nếu không mod nào của bạn cần hook.\n\nNếu một plugin khác cũng tên là version.dll, hãy đổi tên nó và đặt vào CSharpLoader\\Plugins: trình nạp cũng sẽ nạp nó.\n\nĐây là bản fork được duy trì của B1CSharpLoader do czastack làm, theo giấy phép MIT."
+      },
+      "thanks": {
+        "box": {
+          "en": "THANK YOU CZASTACK",
+          "zh-CN": "感谢 CZASTACK",
+          "zh-TW": "感謝 CZASTACK",
+          "vi": "CẢM ƠN CZASTACK"
+        },
+        "text": {
+          "en": "A big thank you to czastack, the original creator of C# Loader, who wrote almost all of its code.\n\nAnd thank you for sharing it as open source. <3",
+          "zh-CN": "非常感谢 C# Loader 的原作者 czastack，几乎所有代码都出自其手。\n\n也感谢 czastack 愿意开源分享。<3",
+          "zh-TW": "非常感謝 C# Loader 的原作者 czastack，幾乎所有程式碼都出自其手。\n\n也感謝 czastack 願意開源分享。<3",
+          "vi": "Xin cảm ơn rất nhiều czastack, tác giả gốc của C# Loader, người đã viết gần như toàn bộ mã nguồn.\n\nCũng xin cảm ơn vì đã chia sẻ dưới dạng mã nguồn mở. <3"
+        },
+        "links": [
+          "https://github.com/czastack"
         ]
       }
     }
