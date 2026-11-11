@@ -1,0 +1,15 @@
+{
+  "tag_name": "v1.2.0",
+  "html_url": "https://github.com/KintaroModding/b1csharploader/releases/tag/v1.2.0",
+  "published_at": "2026-10-25T12:13:58Z",
+  "body": "Fork of [czastack/B1CSharpLoader](https://github.com/czastack/B1CSharpLoader). [czastack](https://github.com/czastack) created C# Loader. This fork keeps it working with new game versions.\n\n**Game version:** Black Myth: Wukong 1.0.21.23831\n\n## New in 1.2.0\n\n**See problems at once**\n\n- **Error banner:** when the loader cannot start, for example after a game update, a red banner tells you so. The start banner also turns red when a mod fails to load.\n- **Error marker:** while the in-game console is closed, a small red box in the top right corner counts new errors.\n- **Game version warning:** when the game build is not the one this loader version was tested with (23831), the start banner turns yellow and says so.\n\n**In-game console**\n\n- **Scrolling:** Page Up and Page Down scroll through the last 500 lines. The game also gets these keys.\n- **Mod list:** the loaded mods, and in red the mods that failed, show under the console title.\n- **Your own key:** set `OverlayKey` in `CSharpLoader/b1cs.ini`, for example `F9`, `Insert`, `Home` or `Tilde`. The default is `F10`.\n\n**More**\n\n- **Log files:** every game start writes a log file to `CSharpLoader/Logs`, and the last 5 are kept. Add the newest one to a bug report.\n- **Ctrl+F5** (reload the mods) now shows a short banner with the number of reloaded mods.\n\n## Install\n\n1. Download `B1CSharpLoader-1.2.0.zip` below.\n2. Copy the `b1` folder from the zip into your `BlackMythWukong` game folder.\n3. Put each C# mod into `b1/Binaries/Win64/CSharpLoader/Mods/<ModName>/<ModName>.dll`.\n\nTo update from an older version, copy the files over the old ones. Your `Mods` folder stays as it is. The new `CSharpLoader/b1cs.ini` has the new `OverlayKey` line; without it, the key is F10.\n\nTo remove the loader, delete `version.dll` and the `CSharpLoader` folder.\n\n## Build it yourself\n\nCheck out the `v1.2.0` tag and run:\n\n```\npowershell -ExecutionPolicy Bypass -File build.ps1 -Version 1.2.0\n```\n\nIt needs Visual Studio 2022 (or its Build Tools) with the C++ workload, and the .NET SDK 8 or newer.\n\nSHA-256 of `B1CSharpLoader-1.2.0.zip`: `e3ce889d2856976618bcb1e184ad8aa9444d04cb25677dee18a3b47e5b239939`\n",
+  "assets": [
+    {
+      "name": "B1CSharpLoader-1.2.0.zip",
+      "size": 1262371,
+      "digest": "sha256:e3ce889d2856976618bcb1e184ad8aa9444d04cb25677dee18a3b47e5b239939",
+      "browser_download_url": "B1CSharpLoader-1.2.0.zip",
+      "github_download_url": "https://github.com/KintaroModding/b1csharploader/releases/download/v1.2.0/B1CSharpLoader-1.2.0.zip"
+    }
+  ]
+}
