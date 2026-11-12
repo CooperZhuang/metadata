@@ -1,22 +1,22 @@
 {
-  "tag_name": "v2.0.0",
-  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v2.0.0",
-  "published_at": "2026-11-11T15:26:28Z",
-  "body": "**One app for several games**\n- **Black Myth: Wukong:** pak, UE4SS and C# Loader mods. The C# Loader and UE4SS install with one click, save backups work, and the game starts with `-fileopenlog`, which its pak mods need.\n- **Phantom Blade Zero:** everything as before.\n- **Stellar Blade: Blood Rain:** a preview of its look, until the game is out. Take a peek and tell us what you think on Discord.\n- **Choose your game** at the first start, or any time with **Switch game** in the title bar. Each game has its own look, and its own mods and backups.\n\n**What else is new**\n- **Launch options:** the gear on the right of **Launch game** sets the arguments the game starts with, with the game's recommended ones.\n- **Tray icon** next to the clock, with a menu to switch or launch the game. **Settings** can minimize and close the app to the tray.\n- **Missing your game?** In the game picker, **Scan a game folder** makes a report to share on Discord, with your user name and ids hidden.\n- The game picker's cards show where each game is on your PC and how many mods it has.\n- At the first start the language question comes first, and the game picker has a language selector.\n- The install review names the game the mods go into.\n- A UE4SS put in by hand is no longer offered as an update when it is already the newest build.\n- A new app icon, the same for every game.\n\n**Install:** unzip `uemm_2.0.0.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. One zip for every game. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. After the update it asks once for your game: choose **Phantom Blade Zero**, and your mods, sets and backups are all there. Or replace `UEModManager.exe` with the new one. The `Data` folder stays. `uemm_phantom-blade-zero_2.0.0.zip` is the same file under its old name, for older versions of the app.\n\n**Thanks** to czastack for B1CSharpLoader, which the C# Loader for Black Myth: Wukong is built on.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
+  "tag_name": "v2.1.0",
+  "html_url": "https://github.com/KintaroModding/uemodmanager/releases/tag/v2.1.0",
+  "published_at": "2026-11-12T13:51:54Z",
+  "body": "**Backups, a page of their own**\n- **Backups** has its own entry in the menu, below UE4SS. Everything about save backups is there now, out of Settings: the save folder, the backup each time you start the game, and **Back up now**.\n- **Normal and Personal:** normal backups are on the left. A slider sets how many the app keeps, from 2 to 20 (6 by default). The green arrow moves a backup to **Personal** on the right, where the app never removes it and it does not count. The red arrow moves it back.\n- **Notes:** give every backup a note, such as \"Before the final boss\". Type one next to **Back up now** for a new backup.\n- **Delete** a backup you do not need, after a question.\n\n**Also new**\n- A tighter menu, no subtexts under the page titles, and the version as the title of the About page.\n\n**Thanks** to EstusFlask for the idea of a chosen number of backups and its first version (#21).\n\n**Install:** unzip `uemm_2.1.0.zip` into a folder you can write to, for example `Documents\\UE MM`, and start `UEModManager.exe`. One zip for every game. It needs the [.NET 8 Desktop Runtime (x64)](https://dotnet.microsoft.com/download/dotnet/8.0).\n\n**Update from an older version:** the app offers the update at start; one click installs it. Your backups stay; the app now keeps 6 by default instead of 5. Or replace `UEModManager.exe` with the new one. The `Data` folder stays. `uemm_phantom-blade-zero_2.1.0.zip` is the same file under its old name, for older versions of the app.\n\n**Something does not work?** In the app, open Settings ▸ Report a problem, copy the report and open an [issue](https://github.com/KintaroModding/uemodmanager/issues) with it.\n",
   "assets": [
     {
-      "name": "uemm_2.0.0.zip",
-      "size": 4438333,
-      "digest": "sha256:b15435e7d3fc2d41b464dd02450b295dfbd17348255808ed659b714eb5001059",
-      "browser_download_url": "uemm_2.0.0.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v2.0.0/uemm_2.0.0.zip"
+      "name": "uemm_2.1.0.zip",
+      "size": 4451444,
+      "digest": "sha256:4a9b5afc496b017fb1323c68e11387193ae763a2fd8797aaf345f674cf288221",
+      "browser_download_url": "uemm_2.1.0.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v2.1.0/uemm_2.1.0.zip"
     },
     {
-      "name": "uemm_phantom-blade-zero_2.0.0.zip",
-      "size": 4438333,
-      "digest": "sha256:b15435e7d3fc2d41b464dd02450b295dfbd17348255808ed659b714eb5001059",
-      "browser_download_url": "uemm_2.0.0.zip",
-      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v2.0.0/uemm_phantom-blade-zero_2.0.0.zip"
+      "name": "uemm_phantom-blade-zero_2.1.0.zip",
+      "size": 4451444,
+      "digest": "sha256:4a9b5afc496b017fb1323c68e11387193ae763a2fd8797aaf345f674cf288221",
+      "browser_download_url": "uemm_2.1.0.zip",
+      "github_download_url": "https://github.com/KintaroModding/uemodmanager/releases/download/v2.1.0/uemm_phantom-blade-zero_2.1.0.zip"
     }
   ]
 }
