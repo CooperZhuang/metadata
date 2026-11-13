@@ -1,15 +1,15 @@
 {
-  "tag_name": "v1.1",
-  "html_url": "https://github.com/KintaroModding/phantombladezero_cppbypass/releases/tag/v1.1",
-  "published_at": "2026-11-04T17:04:57Z",
-  "body": "**New in 1.1: pak mods that add their own scripts.** Version 1.0 let a pak mod edit the game's own listed scripts. Version 1.1 also lets a pak mod add its own new `project/` JavaScript or JSON scripts. Only the project script tree is opened; engine scripts and anything outside it keep the game's real check.\n\n---\n\nA Phantom Blade Zero update (Steam build 26367565, 2026-11-04) made the game refuse any changed game script, which broke JavaScript pak mods. **UE4SS C++ BYPASS** lets those mods load again, and now also lets a mod add new scripts of its own.\n\n**Needs:** UE4SS for Phantom Blade Zero, built for `v3.0.1-1195-g1ceefac8`.\n\n**Install**\n\n1. Download `phantombladezero_cppbypass_1.1_experimental.zip`.\n2. Copy its `ue4ss` folder into the game's `platform\\steam\\` folder, next to `PBZ.exe`. It adds `ue4ss\\Mods\\phantombladezero_cppbypass\\`.\n3. Put your JavaScript pak mods into `ProjectPBZ\\Content\\Paks\\~mods\\`.\n4. Start the game. A full game restart is needed after you add, remove or replace this mod.\n\n**Experimental and pinned.** It is tied to this exact game build and UE4SS build. After a game patch or a UE4SS update it needs a rebuild with new offsets, and it stays off (safe) on any other version until then. Do not run it together with other script loaders such as PBZModLoader.\n\n**Build it yourself:** `python tools/build.py` with the portable MSVC toolchain (see `README.md`). The source is this repository.\n\nLicense: GNU General Public License v3 (see `LICENSE` and `NOTICE.md`).\n",
+  "tag_name": "v1.2",
+  "html_url": "https://github.com/KintaroModding/phantombladezero_cppbypass/releases/tag/v1.2",
+  "published_at": "2026-11-13T00:33:09Z",
+  "body": "**New in 1.2: UE4SS v4.0.0.** The mod now runs on the official UE4SS v4.0.0 release as well as on UE4SS `v3.0.1-1195-g1ceefac8`. Nothing else changed: the UE4SS parts this mod uses are the same in both builds, so one download serves both. Tested in game on UE4SS v4.0.0 with a script pak mod.\n\n---\n\nA Phantom Blade Zero update (Steam build 26367565, 2026-11-04) made the game refuse any changed game script, which broke JavaScript pak mods. **UE4SS C++ BYPASS** lets those mods load again, and also lets a mod add new scripts of its own.\n\n**Needs:** UE4SS for Phantom Blade Zero, `v4.0.0` or `v3.0.1-1195-g1ceefac8`. The official UE4SS v4.0.0 does not include the Phantom Blade Zero configuration yet (it was added right after that release and comes with the next one), so use a UE4SS package for this game that adds it.\n\n**Install**\n\n1. Download `phantombladezero_cppbypass_1.2_experimental.zip`.\n2. Copy its `ue4ss` folder into the game's `platform\\steam\\` folder, next to `PBZ.exe`. It adds `ue4ss\\Mods\\phantombladezero_cppbypass\\`.\n3. Put your JavaScript pak mods into `ProjectPBZ\\Content\\Paks\\~mods\\`.\n4. Start the game. A full game restart is needed after you add, remove or replace this mod.\n\nTo check that it runs: `ue4ss\\Mods\\phantombladezero_cppbypass\\compatibility.log` has the lines `Verified UE4SS ...` and `Both validators hooked`.\n\n**Experimental and pinned.** It is tied to this exact game build and these two UE4SS builds. After a game patch or another UE4SS update it needs a new build, and it stays off (safe) on any other version until then. Do not run it together with other script loaders such as PBZModLoader.\n\n**Build it yourself:** `python tools/build.py` with the portable MSVC toolchain (see `README.md`). The source is this repository.\n\nLicense: GNU General Public License v3 (see `LICENSE` and `NOTICE.md`).\n",
   "assets": [
     {
-      "name": "phantombladezero_cppbypass_1.1_experimental.zip",
-      "size": 53031,
-      "digest": "sha256:5e0b1f46d2749a4df751cf0cbeb3c532d42346e4ff5b4acf47a0f3d6af0c0160",
-      "browser_download_url": "phantombladezero_cppbypass_1.1_experimental.zip",
-      "github_download_url": "https://github.com/KintaroModding/phantombladezero_cppbypass/releases/download/v1.1/phantombladezero_cppbypass_1.1_experimental.zip"
+      "name": "phantombladezero_cppbypass_1.2_experimental.zip",
+      "size": 53720,
+      "digest": "sha256:e0f3a14298e3fb079775abc44aa6b99b77e7059d3b621b2df3cea5057760b1b2",
+      "browser_download_url": "phantombladezero_cppbypass_1.2_experimental.zip",
+      "github_download_url": "https://github.com/KintaroModding/phantombladezero_cppbypass/releases/download/v1.2/phantombladezero_cppbypass_1.2_experimental.zip"
     }
   ]
 }
